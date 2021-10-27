@@ -159,7 +159,7 @@ static void rosimagesrc_init (Rosimagesrc * src)
   src->init_caps = g_strdup("");
 
   src->msg_init = true;
-  src->msg_queue_max = 1;
+  src->msg_queue_max = 9;
   // XXX why does queue segfault without expicit construction?
   src->msg_queue = std::queue<sensor_msgs::msg::Image::ConstSharedPtr>();
 
